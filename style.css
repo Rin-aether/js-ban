@@ -1,0 +1,134 @@
+/* Bootstrap を使用する前提のスタイル */
+body {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-area button:hover {
+  background-color: #0056b3;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #495057;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 8px solid #007bff; /* 左端の青ラインを大きく */
+}
+
+.todo-item {
+  flex-grow: 1;
+  padding: 5px;
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-left: 8px;
+}
+
+button:hover {
+  transform: scale(1.1); /* ホバー時の拡大を滑らかに */
+  transition: all 0.2s;
+}
+
+.btn-complete,
+.btn-delete,
+.btn-back {
+  padding: 8px 12px; /* 戻すボタンのサイズを統一 */
+}
+
+.btn-complete {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-complete:hover {
+  background-color: #218838;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+.btn-back {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-back:hover {
+  background-color: #e0a800;
+}
+
+/* スマホ向けのデザイン調整 */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%; /* PCでは縮めず、スマホのみ余白を小さく */
+    padding: 16px;
+  }
+
+  .input-area {
+    gap: 8px;
+  }
+
+  #add-input-text {
+    font-size: 14px;
+  }
+
+  #add-button {
+    font-size: 14px;
+  }
+}
